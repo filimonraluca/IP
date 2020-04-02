@@ -1,0 +1,242 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.first_page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  width: 70%;
+  height: 100%;
+  margin: 10vh 0 10vh 0;
+  border: 3px solid #e88d72;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px #b0b0b0;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10vh 0 10vh 0;
+}
+
+.restaurant_div {
+  width: 80%;
+  height: auto;
+  align-self: center;
+  margin: 4vh 0 4vh 0;
+  border-bottom: 1px solid #e88d72;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.restaurant_info {
+  width: 40%;
+  height: 100%;
+  align-self: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #ff8f62;
+  font-family: Novecentosanswide;
+}
+
+.restaurant_info h2 {
+  margin: 3vh 0 3vh 0;
+  font-size: 1.8rem;
+}
+
+.restaurant_buttons {
+  width: 40%;
+  height: 100%;
+  align-self: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2vh 3vw 0 0;
+}
+
+.button {
+  width: 8vw;
+  height: 7vh;
+  background-color: #e88d72;
+  opacity: 1;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-family: Novecentosanswide;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 0.5;
+}
+
+.header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e88d72;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.header .header-left {
+  width: 50%;
+  flex-direction: row;
+}
+.header .header-center {
+  width: 35%;
+}
+.header .header-right {
+  width: 15%;
+  flex-direction: row;
+}
+
+.header-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e88d72;
+}
+.header-li {
+  float: left;
+}
+.header-li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header-li a:hover:not(.active) {
+  background-color: #ffa384;
+}
+.active-home {
+  background-color: #543855;
+}
+
+.header-right .cont-logo img {
+  position: absolute;
+  height: 50px;
+  margin-left: 10px;
+}
+.header-right .cont-logo a {
+  margin-left: 65px;
+}
+
+footer .line {
+  display: block;
+  height: 1px;
+  background-color: #c38370;
+  content: " ";
+  width: 70%;
+  margin-bottom: 30px;
+  margin: 0 auto;
+}
+
+footer {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.footer_container {
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+footer h3 {
+  color: #e88d72;
+  font-size: 95%;
+}
+
+footer p {
+  font-size: 90%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  font-size: 90%;
+}
+
+footer a:hover {
+  color: #c38370;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer_about_us,
+.footer_info {
+  flex: 0 1 30%;
+}
+
+.footer_contact {
+  flex: 0 1 40%;
+}
